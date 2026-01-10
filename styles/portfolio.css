@@ -4,6 +4,11 @@
 }
 
 /*========== shared style ===========*/
+.page-width {
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -56,15 +61,12 @@
 header {
     background-color: #FFF8F3;
     background: url(../images/developer.png), url(../images/header_bg.png), #FFF8F3;
-    background-position: top left, bottom right;
+    background-position: 23px 38px, bottom right;
     background-repeat: no-repeat;
     padding-top: 50px;
 }
 
 nav {
-    width: 71%;
-    max-width: 1140px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,9 +127,6 @@ nav .menu a {
 }
 
 #about .about-container {
-    width: 71%;
-    max-width: 1140px;
-    margin: 0 auto;
     text-align: center;
     background-color: #FFF8F3;
     padding: 131px 156px;
@@ -148,12 +147,6 @@ nav .menu a {
 
 .about-info .info-card h4 {
     font-size: 20px;
-}
-
-#skills .skills-container {
-    width: 71%;
-    max-width: 1140px;
-    margin: 0 auto;
 }
 
 #skills .skills-container .skill-box {
@@ -239,9 +232,6 @@ footer {
 
 
 footer .footer-container {
-    width: 71%;
-    max-width: 1140px;
-    margin: 0 auto;
     display: flex;
     gap: 116px;
 }
@@ -267,7 +257,8 @@ footer .footer-container {
     margin-right: 24px;
 }
 
-.footer-container .form input,
+.footer-container .form input[type="text"],
+.footer-container .form input[type="email"],
 .footer-container .form textarea{
     width: 461px;
     padding: 18px 31px;
